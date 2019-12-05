@@ -1,6 +1,6 @@
 import csv
 
-with open(r"SampleData.csv", 'r+') as f:
+with open(r"SampleData.csv", 'r+', encoding='utf-8-sig') as f:
     reader = csv.DictReader(f, delimiter=',')
     for row in reader:
         print(row, file=open("output.txt", "a"))
